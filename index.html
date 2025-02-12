@@ -1,0 +1,101 @@
+<html>
+    <head>
+        <title>Torque Motors</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+     
+        <link rel="stylesheet" href="style.css">
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/addons/p5.sound.min.js"></script>   
+    </head>
+    
+        <nav class = "navbar-inverse my_nav_bar">
+                
+            <div class="navbar-header">
+               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                   <span class="icon-bar"></span>
+                   <span class="icon-bar"></span>
+                   <span class="icon-bar"></span>
+               </button>
+   
+           </div>
+           <div class="collapse navbar-collapse" id="myNavbar">
+               <ul class="nav navbar-nav">
+                   <li><a href="index.html">Home</a></li>
+                   <li><a href="abtus.html">About Us</a></li>
+                   <li><a href="partnerships.html">Partnerships</a></li>
+                   <li><a href="#campus_life">Racing</a></li>
+                   <li><a href="#whats_new">My Cart </a>
+                </li>
+               </ul>
+           </div>
+         </nav> 
+         <body>
+         <div id="main_body">
+        <center>
+            <div id = "h1">
+            <div id ="h1_2">
+            <h1>Torque Motors <img id ="logo_img" src="logo.png" width = 75px, height = 75px></h1>
+            </div>
+            <hr width = 75%>
+            <p id = "slogan">Unleash the Beast. Drive with Power. No Limits, No Compromises—Just Pure Performance. Your Dream Ride Starts Here</p>
+            </div>
+        </center>
+            <h3 id = "buy_title">Buy Cars by Brand: </h2>
+            
+            
+         <center>
+            <div class = "car_div">
+                <center>
+                <h2><img src = "bmw.png" height = 100px width = 100px> BMW</h2>
+                <p><img class = "bmw_img" src = "bmw-m3.png" height = "270px" width = 270px><img class = "bmw_img" src = "bmw-x5.png" height = "270px" width = 270px><img class = "bmw_img" src = "bmw-i8.png" height = "270px" width = 270px><img class = "bmw_img" src = "bmw-z4.png" height = "270px" width = 270px></p>
+                </center>
+                <pre id = "bmw_names" style="background-color: black; color: white; border: none;">BMW M3 - $76,700                         BMW X5 - $90,000                       BMW i8 - $80,488                       BMW Z4 - $71,100</pre>
+                <pre style="margin-left: 130px; background-color: black; color: white; border: none;"><button class = "add_to_cart" onclick="bmw_m3()">Add to Cart</button>                        <button class = "add_to_cart" onclick="bmw_x5()">Add to Cart</button>                      <button class = "add_to_cart" onclick="bmw_i8()">Add to Cart</button>                           <button class = "add_to_cart" onclick="bmw_z4()">Add to Cart</button></pre>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class = "car_div">
+                <center>
+                <h2><img src = "ferrari_logo.png" height = 100px width = 100px> Ferrari</h2>
+                <p><img class = "bmw_img" src = "laferrari.png" height = "270px" width = 270px><img class = "bmw_img" src = "sf90.png" height = "270px" width = 270px><img class = "bmw_img" src = "f40.png" height = "270px" width = 270px><img class = "bmw_img" src = "pista (2).png" height = "270px" width = 270px></p>
+                </center>
+                <pre style="background-color: black; color: white; border: none; margin-left: 65px;">Ferrar La Ferrari - $3,286,875         Ferrari SF90 Stradale - $516,295            Ferrari F40 - $1,500,000             Ferrari 488 Pista - $250,000</pre>
+                <pre style="margin-left: 130px; background-color: black; color: white; border: none;"><button class = "add_to_cart" onclick="laferrari()">Add to Cart</button>                        <button class = "add_to_cart" onclick="sf90stradale()">Add to Cart</button>                      <button class = "add_to_cart" onclick="f40()">Add to Cart</button>                           <button class = "add_to_cart" onclick="pista()">Add to Cart</button></pre>
+            </div>
+            <br>
+            <br>    
+            <br>
+            <br>
+
+            <div class = "car_div">
+                <center>
+                <h2><img src = "porche_logo.png" height = 100px width = 100px> Porche </h2>
+                <p><img class = "bmw_img" src = "911.png" height = "270px" width = 270px><img class = "bmw_img" src = "918.png" height = "270px" width = 270px><img class = "bmw_img" src = "carrera.png" height = "270px" width = 270px><img class = "bmw_img" src = "cayenne.png" height = "270px" width = 270px></p>
+                </center>
+                <pre style="background-color: black; color: white; border: none; margin-left: 105px;">Porche 911 - $180,000               Porche 918 Spider - $845,000             Porche Carrera - $150,000               Porche Cayenne - $150,000</pre>
+                <pre style="margin-left: 130px; background-color: black; color: white; border: none;"><button class = "add_to_cart" onclick="p911()">Add to Cart</button>                        <button class = "add_to_cart" onclick="p918()">Add to Cart</button>                      <button class = "add_to_cart" onclick="carrera()">Add to Cart</button>                           <button class = "add_to_cart" onclick="cayenne()">Add to Cart</button></pre>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class = "car_div">
+                <center>
+                <h2><img src = "am_logo.png" height = 100px width = 100px> Aston Martin </h2>
+                <p><img class = "bmw_img" src = "valkyrie.png" height = "270px" width = 270px><img class = "bmw_img" src = "vantage.png" height = "270px" width = 270px><img class = "bmw_img" src = "vanquish.png" height = "270px" width = 270px><img class = "bmw_img" src = "db11.png" height = "270px" width = 270px></p>
+                </center>
+                <pre style="background-color: black; color: white; border: none; margin-left: 55px;">Astom Martin Valkyrie - $4,000,000        Aston Martin Vantage - 200,000        Aston Martin Vanquish - $400,000          Aston Martin DB11 - $220,000</pre>
+                <pre style="margin-left: 130px; background-color: black; color: white; border: none;"><button class = "add_to_cart" onclick="valkyrie()">Add to Cart</button>                        <button class = "add_to_cart" onclick="vantage()">Add to Cart</button>                      <button class = "add_to_cart" onclick="vanquish()">Add to Cart</button>                           <button class = "add_to_cart" onclick="db11()">Add to Cart</button></pre>
+            </div>
+         </center>
+        </div>
+    </body>
+    <script src = "main.js"></script>
+</html>

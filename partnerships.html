@@ -1,0 +1,176 @@
+<html>
+    <head>
+        <title>Partnerships</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+     
+        <link rel="stylesheet" href="style.css">
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/addons/p5.sound.min.js"></script>   
+
+        <style>
+            body {
+                background-color: #1a1a1a;
+                color: #f1f1f1;
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                height: 100vh;
+                display: flex;
+                flex-direction: column;
+            }
+            .container {
+                flex-grow: 1;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                text-align: center;
+                padding: 20px;
+            }
+            h1 {
+                color: #e0e0e0;
+            }
+            .partners {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 20px;
+                width: 100%;
+            }
+            .partner-card {
+                background-color: #333;
+                padding: 15px;
+                border-radius: 10px;
+                width: 250px;
+                text-align: center;
+            }
+
+            .partner-card:hover{
+                transform: scale(1.1);
+            }
+
+
+            .partner-card img {
+                width: 150px;
+                height: 100px;
+                object-fit: contain;
+                background-color: #222;
+            }
+        </style>
+
+    </head>
+    
+        <nav class = "navbar-inverse my_nav_bar">
+                
+            <div class="navbar-header">
+               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                   <span class="icon-bar"></span>
+                   <span class="icon-bar"></span>
+                   <span class="icon-bar"></span>
+               </button>
+   
+           </div>
+           <div class="collapse navbar-collapse" id="myNavbar">
+               <ul class="nav navbar-nav">
+                   <li><a href="index.html">Home</a></li>
+                   <li><a href="abtus.html">About Us</a></li>
+                   <li><a href="partnerships.html">Partnerships</a></li>
+                   <li><a href="#campus_life">Racing</a></li>
+                   <li><a href="#whats_new">My Cart </a>
+                </li>
+               </ul>
+           </div>
+         </nav> 
+         <body>
+         <div id="main_body">
+        <center>
+            <div id = "h1">
+            <div id ="h1_2">
+            <h1>Torque Motors <img id ="logo_img" src="logo.png" width = 75px, height = 75px></h1>
+            </div>
+            <hr width = 75%>
+            <p id = "slogan">Driven by History, Powered by Innovation, Committed to Excellence for Generations</p>
+            </div>
+        </center>
+        <body>
+            <header>
+                <center>
+                <h1 style="margin-left: 15px;">Our Partnerships</h1>
+                <p style="margin-left: 15px;">Torque Motors is proud to collaborate with world-renowned automotive brands and elite racing series.</p>
+                </center>
+            </header>
+            
+            <div class="container">
+                <div class="partners">
+                   <div class="partner-card">
+                        <img src="porche_logo.png" alt="Porsche" width="150" height="100">
+                        <h3> Porsche</h3>
+                        <p>Engineering excellence meets thrilling performance.</p>
+                    </div>
+                    <div class="partner-card">
+                        <img src="ferrari_logo.png" alt="Ferrari" width="150" height="100">
+                        <h3>Ferrari</h3>
+                        <p>Unleashing the prancing horse for unmatched speed.</p>
+                    </div>
+                    <div class="partner-card">
+                        <img src="am_logo.png" alt="Aston Martin" width="150" height="100">
+                        <h3>Aston Martin</h3>
+                        <p>British luxury and performance at its finest.</p>
+                    </div>
+                    <div class="partner-card">
+                        <img src="bmw.png" alt="BMW" width="150" height="100">
+                        <h3>BMW</h3>
+                        <p>The ultimate driving machine with cutting-edge technology.</p>
+                    </div>
+                    <div class="partner-card">
+                        <img src="merc_logo.png" alt="Mercedes" width="150" height="100">
+                        <h3>Mercedes</h3>
+                        <p>Innovation, luxury, and performance in every drive.</p>
+                    </div>
+                    <div class="partner-card">
+                        <img src="mclaren_logo.png" alt="McLaren" width="150" height="100">
+                        <h3>McLaren</h3>
+                        <p>Precision engineering for ultimate track performance.</p>
+                    </div>
+                    <div class="partner-card">
+                        <img src="kg_logo.png" alt="Koenigsegg" width="150" height="100">
+                        <h3>Koenigsegg</h3>
+                        <p>Pushing the boundaries of hypercar innovation.</p>
+                    </div>
+                    <div class="partner-card">
+                        <img src="maserati_logo.png" alt="Maserati" width="150" height="100">
+                        <h3>Maserati</h3>
+                        <p>Italian craftsmanship with a racing heritage.</p>
+                    </div>
+                    
+                    <div class="partner-card">
+                        <img src="lemans_logo.png" alt="Le Mans" width="150" height="100">
+                        <h3>Le Mans</h3>
+                        <p>Endurance racing at its peak, where legends are made.</p>
+                    </div>
+                    <div class="partner-card">
+                        <img src="gt_logo.png" alt="GT Racing" width="150" height="100">
+                        <h3>GT Racing</h3>
+                        <p>The pinnacle of GT-class speed and competition.</p>
+                    </div>
+                    <div class="partner-card">
+                        <img src="daytona_logo.png" alt="Daytona" width="150" height="100">
+                        <h3>Daytona</h3>
+                        <p>Home of the legendary endurance and stock car races.</p>
+                    </div>
+                    <div class="partner-card">
+                        <img src="f1_logo.png" alt="Formula 1" width="150" height="100">
+                        <h3>Formula 1</h3>
+                        <p>The world's fastest and most prestigious motorsport.</p>
+                    </div>
+                </div>
+            </div>
+        </body>
+        
+</html>
